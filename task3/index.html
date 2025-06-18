@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 3 - Advanced Styling and JS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Responsive Quiz & Joke App</h1>
+
+    <!-- QUIZ SECTION -->
+    <section class="quiz-section">
+      <h2>Quiz</h2>
+      <p id="question">What is full form of http?</p>
+      <button onclick="checkAnswer('a')">A. hyper trans text protocol</button>
+      <button onclick="checkAnswer('b')">B. hyper tension type protocol</button>
+      <button onclick="checkAnswer('c')">C. hyper text transfer protocol</button>
+    </section>
+
+    <!-- API FETCH SECTION -->
+    <section class="api-section">
+      <h2>Random Joke</h2>
+      <button onclick="fetchJoke()">Get Joke</button>
+      <p id="jokeDisplay"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
